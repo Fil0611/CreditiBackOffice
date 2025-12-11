@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Common.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PrimoAvvio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FilBatta</Value>
+    </Setting>
+    <Setting Name="AppName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Crediti</Value>
+    </Setting>
+    <Setting Name="DBFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">database.db</Value>
+    </Setting>
+    <Setting Name="AziendaLogoFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">logo.png</Value>
+    </Setting>
+    <Setting Name="SettingsFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">settings.json</Value>
+    </Setting>
+    <Setting Name="APIOrdini" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://152.89.254.108:8000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
