@@ -19,15 +19,15 @@ $foPackId = "FilBatta.Crediti.FrontOffice"
 $boPackId = "FilBatta.Crediti.BackOffice"
 
 # PackTitle
-$foPackTitle = "FrontOffice"
-$boPackTitle = "BackOffice"
+$foPackTitle = "Crediti FO"
+$boPackTitle = "Crediti BO"
 
 # Token GitHub
 $oauth = Get-Content -Path "C:\Users\fil\Desktop\github_token_velopack.txt" -TotalCount 1
 
 # Repo
-$foRepoUrl = "https://github.com/Fil0611/CreditiFO"
-$boRepoUrl = "https://github.com/Fil0611/CreditiBO"
+$foRepoUrl = "https://github.com/Fil0611/CreditiFrontOffice"
+$boRepoUrl = "https://github.com/Fil0611/CreditiBackOffice"
 
 ##########################
 # INSERIMENTO VERSIONE
