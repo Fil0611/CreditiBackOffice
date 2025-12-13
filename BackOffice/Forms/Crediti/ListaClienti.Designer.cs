@@ -947,7 +947,6 @@
             Name = "ListaClienti";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Crediti";
-            Load += ListaClienti_Load;
             ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
             ((System.ComponentModel.ISupportInitialize)repositoryItemSearchLookUpEdit1).EndInit();
             ((System.ComponentModel.ISupportInitialize)repositoryItemSearchLookUpEdit1View).EndInit();

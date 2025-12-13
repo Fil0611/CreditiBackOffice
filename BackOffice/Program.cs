@@ -1,10 +1,8 @@
 using BackOffice.Forms;
 using Common.Utility;
 using System.Diagnostics;
-#if !DEBUG
-using System.IO;
-using Velopack;
-#endif
+using System.IO;    // RELEASE
+using Velopack;     // RELEASE
 
 namespace Crediti {
     internal static class Program {

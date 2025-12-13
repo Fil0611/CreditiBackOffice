@@ -6,16 +6,9 @@ namespace Common.Forms {
         public AppInfo() {
             InitializeComponent();
 
-            // Imposto il numero di versione
-            /*string version = new UpdateManager(UpdatePath).CurrentVersion?.ToString() ?? Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "";
-            labelAppVersion.Text = $"Versione {version}";*/
-        }
-
-        public string UpdatePath { set {
-                // Imposto il numero di versione
-                string version = new UpdateManager(value).CurrentVersion?.ToString() ?? Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "";
-                labelAppVersion.Text = $"Versione {version}";
-            }
+            // Imposto il numero di versione (url hard-coded perché le versioni di FO e BO coincidono sempre)
+            string version = new UpdateManager("https://github.com/Fil0611/CreditiBO/releases/latest/download").CurrentVersion?.ToString() ?? Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "";
+            labelAppVersion.Text = $"Versione {version}";
         }
     }
 }

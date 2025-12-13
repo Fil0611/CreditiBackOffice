@@ -246,6 +246,7 @@
             Name = "NuovoOrdine";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nuovo Ordine";
+            Load += NuovoOrdine_Load;
             ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();
             layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();

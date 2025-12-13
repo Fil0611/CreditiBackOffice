@@ -243,10 +243,7 @@ namespace BackOffice.Forms.Crediti {
         }
 
         private void barMenuButtonAppInfo_ItemClick(object sender, ItemClickEventArgs e) {
-            using (var appInfoForm = new AppInfo()) {
-                appInfoForm.UpdatePath = Properties.Settings.Default.UpdatePath;
-                appInfoForm.ShowDialog();
-            }
+            using (var appInfoForm = new AppInfo()) appInfoForm.ShowDialog();
         }
 
         private void barMenuButtonAppSettings_ItemClick(object sender, ItemClickEventArgs e) {
@@ -254,10 +251,6 @@ namespace BackOffice.Forms.Crediti {
                 appSettingsForm.updatePath = Properties.Settings.Default.UpdatePath;
                 appSettingsForm.ShowDialog();
             }
-        }
-
-        private async void ListaClienti_Load(object sender, EventArgs e) {
-            if (settingsHandler.settings.UpdateSettings.AutoUpdate) await Updater.CheckUpdate(Properties.Settings.Default.UpdatePath);
         }
 
         private void tabPaneClientiFornitori_SelectedPageChanged(object sender, DevExpress.XtraBars.Navigation.SelectedPageChangedEventArgs e) {

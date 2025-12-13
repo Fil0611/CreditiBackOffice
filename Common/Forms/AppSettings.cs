@@ -28,14 +28,14 @@ namespace Common.Forms {
         // ATTRIBUTI
         private JsonSettingsHandler settingsHandler = new();
 
+        public string updatePath;
+
         private string logoFilePath = Path.Combine(
             "C:",
             Properties.Settings.Default.CompanyName,
             Properties.Settings.Default.AppName,
             Properties.Settings.Default.AziendaLogoFileName
         );
-
-        public string updatePath;
 
         // METODI
         private void SalvaImpostazioni() {

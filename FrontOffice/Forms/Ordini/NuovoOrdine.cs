@@ -9,6 +9,7 @@ namespace FrontOffice.Forms.Ordini {
 
         // ATTRIBUTI
         private OrdiniHandler ordiniHandler = new OrdiniHandler();
+        private JsonSettingsHandler settingsHandler = new();
 
         private int numArticoli = 1;
 
@@ -49,10 +50,10 @@ namespace FrontOffice.Forms.Ordini {
                 if (item != null) {
                     //Debug.WriteLine($"Cod: {item.CodValue} - Nome: {item.NomeValue} - Quant: {item.QuantValue} - Note: {item.NoteValue}");
                     articoli.Add(new Articolo(
-                        item.CodValue != "" ? item.CodValue : null, 
-                        item.NomeValue != "" ? item.NomeValue : null, 
-                        item.QuantValue, 
-                        item.IDFornitore, 
+                        item.CodValue != "" ? item.CodValue : null,
+                        item.NomeValue != "" ? item.NomeValue : null,
+                        item.QuantValue,
+                        item.IDFornitore,
                         item.NoteValue != "" ? item.NoteValue : null
                     ));
                 }
@@ -73,6 +74,10 @@ namespace FrontOffice.Forms.Ordini {
 
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private async void NuovoOrdine_Load(object sender, EventArgs e) {
+            if (settingsHandler.settings.UpdateSettings.AutoUpdate) await Updater.CheckUpdate(Properties.Settings.Default.UpdatePath);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace FrontOffice.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/Fil0611/Crediti/releases/latest/download/fo")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/Fil0611/CreditiFO/releases/latest/download")]
         public string UpdatePath {
             get {
                 return ((string)(this["UpdatePath"]));

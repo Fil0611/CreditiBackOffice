@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="UpdatePath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://github.com/Fil0611/Crediti/releases/latest/download/fo</Value>
+      <Value Profile="(Default)">https://github.com/Fil0611/CreditiFO/releases/latest/download</Value>
     </Setting>
   </Settings>
 </SettingsFile>

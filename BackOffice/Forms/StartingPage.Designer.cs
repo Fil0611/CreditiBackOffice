@@ -78,6 +78,7 @@
             Name = "StartingPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home Page";
+            Load += StartingPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
