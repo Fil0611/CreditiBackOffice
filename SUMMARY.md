@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Crediti](README.md)
+* [Docs](README.md)
